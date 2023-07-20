@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import Me from "../assets/Me.png";
 import "../pages/Home.css";
 
-function Main() {
+function Mainh() {
   return (
     <header className="main__header">
       <div className="container main__header-container">
@@ -11,7 +11,7 @@ function Main() {
           <h1>...newBie dev</h1>
           <p>Conjuring code as a full-stack JS dev newbie! 🧙‍♂️</p>
           <Link to="/about" className="btn lg">
-            About Me{" "}
+            About Me
           </Link>
         </div>
         <div className="main__header-right">
@@ -25,4 +25,4 @@ function Main() {
   );
 }
 
-export default Main;
+export default Mainh;

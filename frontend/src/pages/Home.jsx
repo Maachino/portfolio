@@ -1,6 +1,6 @@
-import Main from "../components/Main";
+import Mainh from "../components/Mainh";
 
 function Home() {
-  return <Main />;
+  return <Mainh />;
 }
 export default Home;
