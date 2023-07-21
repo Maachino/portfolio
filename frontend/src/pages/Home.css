@@ -74,39 +74,39 @@
   color: var(--color-gray-600);
 }
 
-/* ===================== VALUES ===================== */
-.values__container {
+/* ===================== skills ===================== */
+.skills__container {
   display: grid;
   grid-template-columns: 38% 50%;
   gap: 12%;
 }
 
-.values__image {
+.skills__image {
   filter: saturate(0.25);
   transition: var(--transition);
 }
 
-.values__image:hover {
+.skills__image:hover {
   filter: saturate(1);
 }
 
-.values__right > p {
+.skills__right > p {
   margin: 1.5rem 0 5rem;
 }
 
-.values__wrapper {
+.skills__wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 3.4rem 2.4rem;
 }
 
-.card.values__value {
+.card.skills__value {
   padding-top: 3.5rem;
   text-align: left;
   position: relative;
 }
 
-.card.values__value span {
+.card.skills__value span {
   position: absolute;
   top: -1.5rem;
 }
@@ -292,18 +292,18 @@ footer {
     grid-template-columns: 1fr 1fr;
   }
 
-  /* VALUES */
-  .values__container {
+  /* skills */
+  .skills__container {
     grid-template-columns: 1fr;
     justify-content: center;
     gap: 4rem;
   }
 
-  .values__wrapper {
+  .skills__wrapper {
     gap: 4rem 3rem;
   }
 
-  .values__image {
+  .skills__image {
     display: none;
   }
 
@@ -354,13 +354,13 @@ footer {
     margin: 0 auto;
   }
 
-  /* VALUES */
-  .values__wrapper {
+  /* skills */
+  .skills__wrapper {
     grid-template-columns: 1fr;
     gap: 3rem;
   }
 
-  .card.values__value {
+  .card.skills__value {
     width: 84%;
     margin-inline: auto;
   }
