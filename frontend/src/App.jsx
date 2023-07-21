@@ -5,24 +5,28 @@ import About from "./pages/About";
 import Projects from "./pages/Projects";
 import Skills from "./pages/Skills";
 import Contact from "./pages/Contact";
-import Project from "./components/Project";
 import Navbar from "./components/Navbar";
+import { SkillProvider } from "./contexts/SkillContext";
+import { ProjectProvider } from "./contexts/ProjectContext";
 import "./index.css";
 
 function App() {
   return (
-    <BrowserRouter>
-      <Navbar />
-      <Home />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="about" element={<About />} />
-        <Route path="projects" element={<Projects />} />
-        <Route path="skills" element={<Skills />} />
-        <Route path="projects/:id" element={<Project />} />
-        <Route path="contact" element={<Contact />} />
-      </Routes>
-    </BrowserRouter>
+    <ProjectProvider>
+      <SkillProvider>
+        <BrowserRouter>
+          <Navbar />
+          <Home />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="about" element={<About />} />
+            <Route path="projects" element={<Projects />} />
+            <Route path="skills" element={<Skills />} />
+            <Route path="contact" element={<Contact />} />
+          </Routes>
+        </BrowserRouter>
+      </SkillProvider>
+    </ProjectProvider>
   );
 }
 
